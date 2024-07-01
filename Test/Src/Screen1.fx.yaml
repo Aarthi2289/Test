@@ -1,0 +1,29 @@
+Screen1 As screen:
+    Fill: =Color.White
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
+
+    Container1 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Height: =553
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =1193
+        X: =40
+        Y: =40
+        ZIndex: =1
+
+        Header1 As Header:
+            DisplayMode: =DisplayMode.Edit
+            Height: =75
+            OnSelectLogo: =false
+            Title: =App.ActiveScreen.Name
+            UserEmail: =User().Email
+            UserImage: =User().Image
+            UserName: =User().FullName
+            Width: =Parent.Width
+            X: =0
+            Y: =0
+            ZIndex: =1
+
